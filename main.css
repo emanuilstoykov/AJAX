@@ -1,0 +1,53 @@
+body {
+    background-color: #f2f2f2
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 7vmin;
+}
+
+#btn {
+    text-align: center;
+    background-color: #4d9900;
+    color: #000;
+    font-size: 4vmin;
+    height: 6vmin;
+    border-radius: 10px;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #4d9900;
+    font-size: 4.5vmin;
+}
+
+p {
+    font-size: 4vmin;
+}
+
+.hide-me {
+    animation-name: myAnimation;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+    0% {
+        opacity: 1;
+        transform: rotateX(90deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotateX(0deg);
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+}
